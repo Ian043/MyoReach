@@ -1,4 +1,5 @@
 # MyoReach
+By Ian Kim
 
 ### Introduction
   5000 years. That's roughly how long we've been working with mechanics, which is miniscule compared to the hundreds of millions of years nature has had in perfecting biomechanics.  MyoReach is a biomimetic robotic hand that utilizes a small understanding of our own biomechanics, muscles and tendons. My inspiration and interest for prosthetics all started with a fictional character. Spider-Man, a hero fondly recognized by most of the world, is the embodiment of community, innovation and valor. Whilst playing the Spider-man PS4 game, where Peter Parker (Spider-Man) blends technology and empathy to create a positive impact. I was inspired by this idea of helping people who have lost a part of themselves serving, from disease, genetics and unfortunate accidents through prosthetic. 
