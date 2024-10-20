@@ -12,6 +12,7 @@ By Ian Kim
 - Tendon-like pulley mechanism
 - Rubber grip pads ("skin")
 - Approachable aesthetic
+- 5V-7V and 2.5A-5A
 
 ### Components:
 - Custom plastic molded hand structure
