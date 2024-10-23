@@ -50,7 +50,7 @@ void setup() {
   pinMode(button3, INPUT);
   pinMode(button4, INPUT);
   pinMode(button5, INPUT);
-}```
+}```cpp
 
 ## Finger Control Logic
 This loop continuously checks if a button is pressed. When a button is pressed, the corresponding finger closes. When the button is released, the finger opens:
@@ -89,7 +89,7 @@ This loop continuously checks if a button is pressed. When a button is pressed, 
     finger5.write(0);  // Close finger
   } else {
     finger5.write(180);  // Open finger
-  }```
+  }```cpp
 }
 ### Components:
 - Custom plastic molded hand structure
