@@ -50,11 +50,11 @@ void setup() {
   pinMode(button3, INPUT);
   pinMode(button4, INPUT);
   pinMode(button5, INPUT);
-}
+}```
 
 ## Finger Control Logic
 This loop continuously checks if a button is pressed. When a button is pressed, the corresponding finger closes. When the button is released, the finger opens:
-
+```
 void loop() {
   // Finger 1 control
   if (digitalRead(button1) == HIGH) {  // Button pressed
@@ -90,7 +90,7 @@ void loop() {
   } else {
     finger5.write(180);  // Open finger
   }
-}
+}```
 ### Components:
 - Custom plastic molded hand structure
 - Arduino Uno R4 WiFi
