@@ -54,8 +54,8 @@ void setup() {
 
 ## Finger Control Logic
 This loop continuously checks if a button is pressed. When a button is pressed, the corresponding finger closes. When the button is released, the finger opens:
-```
-void loop() {
+
+```void loop() {
   // Finger 1 control
   if (digitalRead(button1) == HIGH) {  // Button pressed
     finger1.write(0);  // Close finger
