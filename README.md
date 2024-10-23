@@ -89,8 +89,8 @@ This loop continuously checks if a button is pressed. When a button is pressed, 
     finger5.write(0);  // Close finger
   } else {
     finger5.write(180);  // Open finger
-  }
-}```
+  }```
+}
 ### Components:
 - Custom plastic molded hand structure
 - Arduino Uno R4 WiFi
