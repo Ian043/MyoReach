@@ -43,10 +43,10 @@ By Ian Kim
 ### Reaching Farther
   Innovation is improving whether our designs work optimally or don't. The possibilities for future improvements are vast.
 
-Enhanced dexterity: Improvements on finger precision by incorporating more sensors/feedback systems
-Material: Exploring advanced materials such as lightweight carbon fiber, grid pattern skin for better grip
-Wireless control: Implementing Bluetooth or WiFi remote control of the hand
-Electromyography (EMG): Integrating electrodes and EMG controllers for natural movements in response to arm muscles
-Full arm integration: Expanding to include the wrist and full arm with rotational capabilities
-Touch/haptic feedback: Touch or pressure based sensors for better grip strength control
-Calculations: This second prototype focused on design and functionality. Future iterations will include torque, power efficiency, and material stress calculations.
+- Enhanced dexterity: Improvements on finger precision by incorporating more sensors/feedback systems
+- Material: Exploring advanced materials such as lightweight carbon fiber, grid pattern skin for better grip
+- Wireless control: Implementing Bluetooth or WiFi remote control of the hand
+- Electromyography (EMG): Integrating electrodes and EMG controllers for natural movements in response to arm muscles
+- Full arm integration: Expanding to include the wrist and full arm with rotational capabilities
+- Touch/haptic feedback: Touch or pressure based sensors for better grip strength control
+- Calculations: This second prototype focused on design and functionality. Future iterations will include torque, power efficiency, and material stress calculations.
