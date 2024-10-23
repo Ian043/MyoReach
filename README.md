@@ -14,6 +14,83 @@ By Ian Kim
 - Approachable aesthetic
 - 5V-7V and 2.5A-5A
 
+### Key Code Snippets:
+
+## Servo Setup
+This section sets up the servos and buttons that control the fingers. Each servo is attached to a pin, and each button is assigned to an input pin on the Arduino:
+
+```cpp
+#include <Servo.h>  // Include the Servo library to control the servos
+
+// Declaring 5 Servo objects, one for each finger
+Servo finger1;
+Servo finger2;
+Servo finger3;
+Servo finger4;
+Servo finger5;
+
+// Assigning each button to a specific pin on the Arduino
+int button1 = 2;
+int button2 = 3;
+int button3 = 4;
+int button4 = 5;
+int button5 = 6;
+
+void setup() {
+  // Attaching each servo object to a PWM pin on the Arduino
+  finger1.attach(9);  
+  finger2.attach(10);
+  finger3.attach(11);
+  finger4.attach(12);
+  finger5.attach(13);
+
+  // Each button pin set as an input
+  pinMode(button1, INPUT);
+  pinMode(button2, INPUT);
+  pinMode(button3, INPUT);
+  pinMode(button4, INPUT);
+  pinMode(button5, INPUT);
+}
+
+## Finger Control Logic
+This loop continuously checks if a button is pressed. When a button is pressed, the corresponding finger closes. When the button is released, the finger opens:
+
+void loop() {
+  // Finger 1 control
+  if (digitalRead(button1) == HIGH) {  // Button pressed
+    finger1.write(0);  // Close finger
+  } else {  // Button not pressed
+    finger1.write(180);  // Open finger
+  }
+
+  // Finger 2 control
+  if (digitalRead(button2) == HIGH) {
+    finger2.write(0);  // Close finger
+  } else {
+    finger2.write(180);  // Open finger
+  }
+
+  // Finger 3 control
+  if (digitalRead(button3) == HIGH) {
+    finger3.write(0);  // Close finger
+  } else {
+    finger3.write(180);  // Open finger
+  }
+
+  // Finger 4 control
+  if (digitalRead(button4) == HIGH) {
+    finger4.write(0);  // Close finger
+  } else {
+    finger4.write(180);  // Open finger
+  }
+
+  // Finger 5 control
+  if (digitalRead(button5) == HIGH) {
+    finger5.write(0);  // Close finger
+  } else {
+    finger5.write(180);  // Open finger
+  }
+}
 ### Components:
 - Custom plastic molded hand structure
 - Arduino Uno R4 WiFi
@@ -33,7 +110,7 @@ By Ian Kim
 **Total Approx. Cost: $67**
 
 ### Design and Creation Process:
-  As with all inventions, the first step in my project was the design. I sketched a [blueprint](https://drive.google.com/file/d/1KAcDJhHuzG2HDkgqS8i72pVI0NaVCGIB/view?usp=drivesdk) of what I hoped the final product would look like. After the measurements were taken, I molded [five fingers](https://drive.google.com/file/d/1wUTU7NtBJHKEU5I8zNXyB9v5SVOkmFRP/view?usp=drivesdk) with a supporting wire in the middle of each finger segment. These wires were separate from the ones used in the pulley mechanisms, which were positioned facing inward. Each finger had three segments with a gap of half a milimeter for range of motion. The fingers were attached to the [top palm frame](https://drive.google.com/file/d/1PJylf_JS1uQc-mjdayIbHYAloeE31uG2/view?usp=drivesdk) and the servo wires fastened as to esure the pulley wires remained straight and didn't bend during servo movement. The [bottom palm frame](https://drive.google.com/file/d/1kjX_7D8G7FNjjbkDiwwyNQUEE1Gm2_Dy/view?usp=drivesdk) was molded and assembled, keeping the palm itself hollow and light. With the frame complete, I began testing [servo/dexterity](https://drive.google.com/file/d/1o4LcCowCidxtdcKZj3kutI4AjlL-rLgh/view?usp=drivesdk). The pulley wires that extended beyond the palm frame were fastened with straws, maintaining predictable movement of the fingers. I then began [testing each finger individually](https://drive.google.com/file/d/1Nwwm9ss7vFfqEPAdvjBI0EOlBfXAxrn-/view?usp=drivesdk). The arduino was hooked up with accompanying momentary push buttons for each finger. To make control easier, I attached all five buttons to a small carboard box and labeled them as to not get confused during testing. [Check the setup here](https://drive.google.com/file/d/19v2fjyHqynihuisz0XAgHlieq01nuYPd/view?usp=drivesdk). The first object handled in testing was a rectangular box of straws. [See testing video here](https://drive.google.com/file/d/1jV3LzWMtzXkp8CmdkTSbtoonH-oE5Y1M/view?usp=drivesdk). The hand was able to pick up the box and gently set it down. The smooth and responsive movements of the servo-driven fingers managed without applying excessive force. The second phase of testing was with a heavier and larger object, a shaker bottle. The hand had failed to successfully grasp the item and so I looked back at my blueprint. Though the hexagonal texture application was an exciting concept, it would be little to no added value considering the tacky texture of the silicone rubber. I poured out two ounces of liquid silicone rubber and let gravity expand it out. [View finished texture here](https://drive.google.com/file/d/1XAK26EwsmiB30pm-muddGZElRdJ4R5xu/view?usp=drivesdk). The silicone was then cut accordingly and molded to the tip of each finger and the palm, as glue didn't apply well, to the silicone. 
+  As with all inventions, the first step in my project was the design. I sketched a [blueprint](https://drive.google.com/file/d/1KAcDJhHuzG2HDkgqS8i72pVI0NaVCGIB/view?usp=drivesdk) of what I hoped the final product would look like. I started working on the code I would upload to the arduino, making sure each servo would efficiently operate the fingers in accordance with button signals. After the measurements were taken, I molded [five fingers](https://drive.google.com/file/d/1wUTU7NtBJHKEU5I8zNXyB9v5SVOkmFRP/view?usp=drivesdk) with a supporting wire in the middle of each finger segment. These wires were separate from the ones used in the pulley mechanisms, which were positioned facing inward. Each finger had three segments with a gap of half a milimeter for range of motion. The fingers were attached to the [top palm frame](https://drive.google.com/file/d/1PJylf_JS1uQc-mjdayIbHYAloeE31uG2/view?usp=drivesdk) and the servo wires fastened as to esure the pulley wires remained straight and didn't bend during servo movement. The [bottom palm frame](https://drive.google.com/file/d/1kjX_7D8G7FNjjbkDiwwyNQUEE1Gm2_Dy/view?usp=drivesdk) was molded and assembled, keeping the palm itself hollow and light. With the frame complete, I began testing [servo/dexterity](https://drive.google.com/file/d/1o4LcCowCidxtdcKZj3kutI4AjlL-rLgh/view?usp=drivesdk). The pulley wires that extended beyond the palm frame were fastened with straws, maintaining predictable movement of the fingers. I then began [testing each finger individually](https://drive.google.com/file/d/1Nwwm9ss7vFfqEPAdvjBI0EOlBfXAxrn-/view?usp=drivesdk). The arduino was hooked up with accompanying momentary push buttons for each finger. To make control easier, I attached all five buttons to a small carboard box and labeled them as to not get confused during testing. [Check the setup here](https://drive.google.com/file/d/19v2fjyHqynihuisz0XAgHlieq01nuYPd/view?usp=drivesdk). The first object handled in testing was a rectangular box of straws. [See testing video here](https://drive.google.com/file/d/1jV3LzWMtzXkp8CmdkTSbtoonH-oE5Y1M/view?usp=drivesdk). The hand was able to pick up the box and gently set it down. The smooth and responsive movements of the servo-driven fingers managed without applying excessive force. The second phase of testing was with a heavier and larger object, a shaker bottle. The hand had failed to successfully grasp the item and so I looked back at my blueprint. Though the hexagonal texture application was an exciting concept, it would be little to no added value considering the tacky texture of the silicone rubber. I poured out two ounces of liquid silicone rubber and let gravity expand it out. [View finished texture here](https://drive.google.com/file/d/1XAK26EwsmiB30pm-muddGZElRdJ4R5xu/view?usp=drivesdk). The silicone was then cut accordingly and molded to the tip of each finger and the palm, as glue didn't apply well, to the silicone. 
 [See layout here](https://drive.google.com/file/d/1oLq2sTmyucbubebhE4JNvn9YO60HsPGY/view?usp=drivesdk). The silicone skin has vastly improved the hand's friction and was able to grab the shaker with ease. [See testing video here](https://drive.google.com/file/d/1jS7FxoiRBOZUIswcqvdePFKeaTsZOwDr/view?usp=drivesdk). The heaviest object to be successfully lifted was a 750 ml bottle of cleaning spray, which definitely wiped my expectations [Scoff at pun and see the action here](https://drive.google.com/file/d/1nCUwnhEs2CO1R_GBKnQ5s0hsF5HLF5ey/view?usp=drivesdk). To conclude my tests, I made a few friendly gestures (and a few unprofessional ones off record) [See here](https://drive.google.com/file/d/1J6GY3HbRTU-hsjta2yf4Iu-f0Sr55E1q/view?usp=drivesdk). 
 
 ### The End?:
