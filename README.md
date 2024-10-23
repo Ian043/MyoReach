@@ -16,7 +16,7 @@ By Ian Kim
 
 ### Key Code Snippets:
 
-# Servo Setup
+#### Servo Setup
 This section sets up the servos and buttons that control the fingers. Each servo is attached to a pin, and each button is assigned to an input pin on the Arduino:
 
 ```cpp
@@ -52,7 +52,7 @@ void setup() {
   pinMode(button5, INPUT);
 }
 ```
-# Finger Control Logic
+#### Finger Control Logic
 This loop continuously checks if a button is pressed. When a button is pressed, the corresponding finger closes. When the button is released, the finger opens:
 ```
 void loop() {
