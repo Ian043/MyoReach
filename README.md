@@ -128,5 +128,5 @@ void loop() {
 - Electromyography (EMG): Integrating electrodes and EMG controllers for natural movements in response to arm muscles
 - Full arm integration: Expanding to include the wrist and full arm with rotational capabilities
 - Touch/haptic feedback: Touch or pressure based sensors for better grip strength control
-- Calculations: This second prototype focused on design and functionality. Future iterations will include torque, power efficiency, and material stress calculations.
-- Energy: The hand currently run off a type c usb wall charger cable. Finding an affordable and rechargable alternative power source is essential for real life applications.
+- Calculations: This second prototype focused on design and functionality. Future iterations will include torque, power efficiency, and material stress calculations
+- Energy: The hand currently run off a type c usb wall charger cable. Finding an affordable and rechargable alternative power source is essential for real life applications
