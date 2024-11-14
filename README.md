@@ -125,9 +125,9 @@ void loop() {
   With the variables set, the calculations followed: wire stress --> servo torque per finger --> applying safety factor to servo torque --> set practical load capacity. Since I'm clearly not a fictional comic book character with plot expertise, I had to assume any load applied to the design was unevenly distributed. This meant assuming objects were being carried by one finger, thus ensuring reliable projections. In real world applications objects tend to have non-uniform shapes and our hands rarely grasp those objects with the same effort in each finger.  
 
 #### Key Findings
-- **Practical Load Capacity**: **3.4 kg** with a safety factor, primarily limited by servo torque.
-- **Wire Strength**: The stainless steel wire had a safe load capacity of up to **83 kg (819 N)** considering stress concentration and safety margin.
-- **Servo Torque**: Each finger required significantly less torque than the servo’s rated capacity, ensuring durability.
+- Practical Load Capacity: **3.4 kg** with a safety factor, primarily limited by servo torque.
+- Wire Strength: The stainless steel wire had a safe load capacity of up to **83 kg (819 N)** considering stress concentration and safety margin.
+- Servo Torque: Each finger required significantly less torque than the servo’s rated capacity, ensuring durability.
 
 ## Detailed Calculations Run Through Python
 
