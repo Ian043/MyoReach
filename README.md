@@ -131,7 +131,7 @@ void loop() {
 
 #### Detailed Calculations Run Through Python
 
-[Click Here](https://github.com/Ian043/MyoReach-Practical-Load-Calculations/new/main).
+[Click Here](https://github.com/Ian043/MyoReach-Practical-Load-Calculations/new/main](https://github.com/Ian043/MyoReach-Practical-Load-Calculations).
 
 
 #### References
