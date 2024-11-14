@@ -129,7 +129,7 @@ void loop() {
 - Wire Strength: The stainless steel wire had a safe load capacity of up to **83 kg (819 N)** considering stress concentration and safety margin.
 - Servo Torque: Each finger required significantly less torque than the servo’s rated capacity, ensuring durability.
 
-## Detailed Calculations Run Through Python
+#### Detailed Calculations Run Through Python
 
 [Click Here](https://github.com/Ian043/MyoReach-Practical-Load-Calculations/new/main).
 
