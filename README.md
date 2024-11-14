@@ -109,8 +109,7 @@ void loop() {
 - **Silicone liquid** | 2 oz | $2.4
 - **Jumper wires** | 15 wires | $1.50
 - **Polymorph biodegradable thermoplastic** | 15 oz | $16
---
-**Total Approx. Cost: $67**
+***Total Approx. Cost: $67**
 
 ---
 
