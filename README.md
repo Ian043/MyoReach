@@ -6,6 +6,7 @@ By Ian Kim
 
   I started working on my [first prototype](https://drive.google.com/file/d/191Oo7Ml_8PpCRKEl4oRl7nUMozBNuhZv/view?usp=drivesdk), a folding retractable mechanical arm with three fingers/claws. In the first iteration, the fingers/claws were directly attached to the servos for predictable and unhindered movement. Though it was able to grab objects with stability, I felt it lacked the human dexterity required for more delicate tasks [(See performance here)](https://drive.google.com/file/d/1FCV47Mdx2rV2zw4nP2uJiQcjS7VA9Hfq/view?usp=drivesdk). I also considered how the design's appearance might affect its approachability. What is the buyers main concern when purchasing this type of product? When it comes to restoring functionality that people have lost, most people don't dwell on effective, they want familiar. The second iteration would begin with hopes of designing a biomimetic hand, that could function similarly to my own and successfully handle a range of everyday objects. Keeping my inspiration at heart, a vital goal of this project was keeping it affordable yet capable.
 
+---
 ### Features:
 - Controlled by Arduino microcontroller
 - Servo-driven finger movements
@@ -14,6 +15,7 @@ By Ian Kim
 - Approachable aesthetic
 - 5V-7V and 2.5A-5A
 
+---
 ### Key Code Snippets:
 
 #### Servo Setup
@@ -107,10 +109,9 @@ void loop() {
 - **Silicone liquid** | 2 oz | $2.4
 - **Jumper wires** | 15 wires | $1.50
 - **Polymorph biodegradable thermoplastic** | 15 oz | $16
----
 **Total Approx. Cost: $67**
 
-
+---
 
 ### Design and Creation Process:
 
@@ -127,7 +128,7 @@ void loop() {
   The hand had failed to successfully grasp the item and so I looked back at my blueprint. Though the hexagonal texture application was an exciting concept, it would be little to no added value considering the tacky texture of the silicone rubber. I poured out two ounces of liquid silicone rubber and let gravity expand it out [(View finished texture here)](https://drive.google.com/file/d/1goqixkMn51Jm6vPPqFrcDRn8eYvwIYZO/view?usp=drivesdk). The silicone was then cut accordingly and molded to the tip of each finger and the palm, as glue didn't apply well, to the silicone
 [(See layout here)](https://drive.google.com/file/d/1A92DBwEOgFQ5kPHDrchAwH5kXuvd0dji/view?usp=drivesdk). The silicone skin has vastly improved the hand's friction and was able to grab the shaker with ease [(See testing video here)](https://drive.google.com/file/d/1jS7FxoiRBOZUIswcqvdePFKeaTsZOwDr/view?usp=drivesdk). The heaviest object to be successfully lifted was a 750 ml bottle of cleaning spray, which definitely wiped my expectations [(Scoff at pun and see the action here)](https://drive.google.com/file/d/1nCUwnhEs2CO1R_GBKnQ5s0hsF5HLF5ey/view?usp=drivesdk). To conclude my tests, I made a few friendly gestures (and a few unprofessional ones off record) [(See here)](https://drive.google.com/file/d/1J6GY3HbRTU-hsjta2yf4Iu-f0Sr55E1q/view?usp=drivesdk). 
 
-
+---
 ### Robotic Hand Load Capacity Analysis
   Analysis of the the load capacity of a robotic hand design, including stress, torque, and load distribution calculations. The purpose of this was to determine the safe operating limits and verify that the servos, wire, along with the frame can support the projected loads. Just like most migratory birds, engineers must always prepare for things to go south and that is exactly how the parameters for the performance calculations were approached. 
 
@@ -160,12 +161,13 @@ void loop() {
 - [Engineering Library](https://www.engineeringlibrary.org/reference/stress-concentration)
 - [MIT OpenCourseWare](https://ocw.mit.edu/courses/mechanical-engineering/2-001-mechanics-materials-i-fall-2006/)
   
-
+---
 
 ### The End?:
 
   After 67 dollars, a mess of plastics and wires, an impatient passion for creative action, one week and 17 unrelated hours replaying Spider-Man for the nostalgia, the project was complete. MyoReach, a humble beginning accompanying my ongoing engineering degree was a success in my opinion, being able to manipulate the weight and size range of most household items. It's also to say that almost all of the materials used are reusable/recyclable with the exception of the plastic parts of the jumper wires. I stand by my decision to use moldable plastic because while CAD models may present precision, it would have cost tedious reiterations and resources for the little faults I encountered during the making process. Only being the second prototype, there is also not much need to go all out considering the improvements that are to surface in the future. The heart of this project wasn't testing academic prowess or fulfilling a requirement, it was the exploration of resilience. At the core of science is exploration, curiosity, shock and awe, a persistence built atop trial and error to be backed by the beauty of what we can reach for. Continually striving for improvement and for the betterment of people's lives is the true spark of innovation. Our reach should never settle on anything and be content with 'good enough', for once we grasp anything fully, we stop reaching.
 
+---
 ### Reaching Farther
   Innovation is improving whether our designs work optimally or don't. The possibilities for future improvements are vast.
 
